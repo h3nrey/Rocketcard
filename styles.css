@@ -1,0 +1,226 @@
+:root {
+  --bg: #000000;
+  --bg-card: #0E1218;
+  --text: #F1F1F1;
+  --img-profile: #8257e5;
+  --buttons: #FFF;
+  --border-button: #1A1A1A;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    color: var(--text);
+    font-family: "system-ui";
+}
+
+body{
+    background-color: var(--bg-card);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main p span{
+  color: var(--img-profile);
+}
+#card{
+  /* border: 1.3rem solid #000; */
+  width: 18.375rem;
+  height: 43.3rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem 5rem 1.5rem;
+  justify-content: space-between;
+  overflow:hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 12px 12px var(--img-profile);
+  animation: cardRotating 3s infinite;
+  transition: all 600ms;
+}
+#card:hover{
+  transform: scale(0.9);
+}
+
+
+
+/*--- Brand ---*/
+#brand-container{
+  display: flex;
+  align-items: center;
+}
+
+#brand-container img{
+  width:3.3rem;
+  height: 3.3rem;
+  border: 0.2rem solid var(--text) ;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+
+/*--- More Information ---*/
+#more-information{
+  background: linear-gradient(var(--bg-card), var(--border-button));
+  display: flex;
+  flex-direction: column;
+  width:55%;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.information-container{
+  display: flex;
+}
+
+.information-container img{
+  margin-right: 0.5rem;
+}
+/*---avatar---*/
+#avatar-container{
+  width: 25rem;
+  position: absolute;
+  height: 25rem;
+  z-index: -1;
+  left: 13%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--img-profile);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar-container #avatar{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+
+#more-option-container{
+  height: 16rem;
+  justify-content: space-between;
+}
+
+
+/*---Username Search---*/
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container{
+  display: flex;
+  margin-top: 0.5rem;
+}
+input#username-input{
+  height: 3rem;
+  width: 15.6rem;
+  background-color: #a0b5ca;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color: var(--text);
+  border: 0.5rem solid #000;
+  padding-left: 0.5rem;
+}
+
+#search-user-btn{
+  height: 3rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 3.8rem;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+#search-user-btn:active{
+  transform: scale(0.8);
+}
+
+/*--- Customize Card ---*/
+#more-option-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-generator-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button#generate-bg, button#download-card-button {
+  background-color: var(--bg);
+  border: none;
+  height: 3.6rem;
+  border-radius: 0.8rem;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+button#generate-bg:hover, button#download-card-button:hover{
+  background-color: var(--img-profile);
+  color: var(--text);
+}
+button#generate-bg:active{
+  transform: scale(0.9);
+}
+
+/* @keyframes cardRotating {
+  0%{    
+    transform: rotateZ(10deg);
+  }
+  50%{
+    transform: rotateZ(-10deg);
+  }
+  100%{
+    transform: rotateZ(10deg);
+  }
+} */
+@media (min-width:1250px) {
+  #card{
+    width: 18.375rem;
+    height: 30.3rem;
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+  }
+  #username{
+    font-size: 1.2rem;
+  }
+  #more-information{
+    /* width:55%;s */
+    padding: 1rem 0.5rem;
+  }
+
+  #more-information .info{
+    font-size: 0.9rem;
+  }
+
+  #avatar-container{
+    height: 18rem;
+    width: 18rem;
+    left: 5rem;
+  }
+}

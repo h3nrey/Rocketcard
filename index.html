@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketCard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <p>Compartilhe seu <span>#rocketcard</span> </p>
+            <div id="card">
+                <div id="brand-container">
+                    <img src="assets/assets/logo.svg" alt="" class="brand-logo">
+                    <h2 id="username">MacacoColorido</h2>
+               </div>
+                <div id="more-information">
+                    <div class="information-container">
+                        <img src="assets/assets/followers.svg" alt="">
+                        <p class="info" id="followers">seguidores</p>
+                    </div>
+                    <div class="information-container">
+                        <img src="assets/assets/following.svg" alt="">
+                        <p class="info" id="following">seguindo</p>
+                    </div>
+                    <div class="information-container">
+                        <img src="assets/assets/repository.svg" alt="">
+                        <p class="info" id="repositores">seguidores</p>
+                    </div>
+                    <div class="information-container">
+                        <img src="assets/assets/company.svg" alt="">
+                        <p class="info" id="email">seguidores</p>
+                    </div>
+                    <div class="information-container">
+                        <img src="assets/assets/location.svg" alt="">
+                        <p class="info" id="location"></p>
+                    </div>
+                </div>
+                <div id="avatar-container">
+                    <img src="assets/assets/location.svg" alt="avatar" id="avatar">
+                </div>
+            </div>
+            <button id="download-card-button" class="downloadtable" onclick="downloadtable()"> Download Table</button>
+        </main>
+        <div id="more-option-container">
+            <form action="" id="user-finder-container">
+                <h2>Pesquisar Usuário</h2>
+                <div class="input-container">
+                    <input type="text" id="username-input" placeholder="h3nrey">
+                    <button type="submit" id="search-user-btn"> 
+                        <img src="assets/assets/search.svg" alt="">
+                    </button>
+
+                </div>
+            </form>
+            <div class="bg-generator-container">
+                <h2>Customizar Rocketcard</h2>
+                <button id="generate-bg">Gerar Background</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="donwloadCards.js"></script>
+    <script src="main.js"></script>
+    <script src="cardBehaviour.js"></script>
+</body>
+</html>
