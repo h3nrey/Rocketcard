@@ -37,8 +37,8 @@ main p span{
   color: var(--img-profile);
 }
 #card{
-  /* border: 1.3rem solid #000; */
-  width: 18.375rem;
+  background-color: var(--bg-card);
+  width: 22.375rem;
   height: 43.3rem;
   display: flex;
   flex-direction: column;
@@ -200,7 +200,55 @@ button#generate-bg:active{
     transform: rotateZ(10deg);
   }
 } */
-@media (min-width:1250px) {
+@media (max-width:600px) {
+  .container{
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    /* padding: 2rem; */
+    overflow: scroll;
+  }
+
+  main{
+    margin-top: 2.5rem;
+  }
+  main p{
+    text-align: center;
+  }
+  #card{
+    width: 18.375rem;
+    height: 30.3rem;
+    padding: 2rem 1.5rem 3.5rem 1.5rem;
+    margin: 1rem 0 0 0;
+  }
+  #username{
+    font-size: 1.2rem;
+  }
+
+  #download-card-button{
+    margin-top: 0rem !important;
+  }
+  #more-information{
+    /* width:55%;s */
+    padding: 1rem 0.5rem;
+  }
+
+  #more-information .info{
+    font-size: 0.9rem;
+  }
+
+  form{
+    margin-bottom: 2rem;
+  }
+
+  #avatar-container{
+    height: 18rem;
+    width: 18rem;
+    left: 5rem;
+  }
+}
+
+@media (max-width:1310px) {
   #card{
     width: 18.375rem;
     height: 30.3rem;
@@ -210,7 +258,7 @@ button#generate-bg:active{
     font-size: 1.2rem;
   }
   #more-information{
-    /* width:55%;s */
+    width:65%;
     padding: 1rem 0.5rem;
   }
 
@@ -224,3 +272,6 @@ button#generate-bg:active{
     left: 5rem;
   }
 }
+
+
+
