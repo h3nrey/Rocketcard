@@ -1,5 +1,5 @@
 # **Rocketcard**
-![](ReadmeAssets/home.png)
+![](ReadmeAssets/base.png)
 
 ## **Sobre**
 Um site que permite buscar os dados de usuários do github e exibir em um card.
