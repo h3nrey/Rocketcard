@@ -38,12 +38,12 @@ main p span{
 }
 #card{
   background-color: var(--bg-card);
-  width: 22.375rem;
-  height: 43.3rem;
+  width: 17.375rem;
+  height: 28.299999999999997rem;
   display: flex;
   flex-direction: column;
   border-radius: 1.5rem;
-  padding: 2rem 1.5rem 5rem 1.5rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   justify-content: space-between;
   overflow:hidden;
   position: relative;
@@ -80,7 +80,7 @@ main p span{
   background: linear-gradient(var(--bg-card), var(--border-button));
   display: flex;
   flex-direction: column;
-  width:55%;
+  width:65%;
   padding: 1rem;
   border-radius: 2rem;
 }
@@ -94,11 +94,11 @@ main p span{
 }
 /*---avatar---*/
 #avatar-container{
-  width: 25rem;
+  width: 15rem;
   position: absolute;
-  height: 25rem;
+  height: 15rem;
   z-index: -1;
-  left: 13%;
+  left: 35%;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--img-profile);
@@ -205,7 +205,7 @@ button#generate-bg:active{
     flex-direction:column-reverse;
     align-items: center;
     justify-content: center;
-    /* padding: 2rem; */
+    height: 100%;
     overflow: scroll;
   }
 
@@ -226,7 +226,7 @@ button#generate-bg:active{
   }
 
   #download-card-button{
-    margin-top: 0rem !important;
+    margin-top: 1rem !important;
   }
   #more-information{
     /* width:55%;s */
